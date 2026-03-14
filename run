@@ -1,0 +1,29 @@
+setInterval(() => {
+
+// Find all buttons on the screen
+
+const buttons = Array.from(document.querySelectorAll('button'));
+
+// Look for Run, Accept, or Retry
+
+const actionBtn = buttons.find(b =>
+
+b.textContent.includes('Run') ||
+
+b.textContent.includes('Accept') ||
+
+b.textContent.includes('Retry')
+
+);
+
+if (actionBtn) {
+
+// Optional: keeps your console clean so you know it's working
+
+console.log(`[Auto-Clicker] Clicking: ${actionBtn.textContent.trim()}`);
+
+actionBtn.click();
+
+}
+
+}, 1000); // Checks every 1 second
