@@ -1,9 +1,3 @@
-Hope google fixes the options soon, but in the meantime, hope my workaround will help you.
-
-// ═══════════════════════════════════════════════════════════
-// AUTO-CLICKER FOR "Accept" BUTTON
-// Searches inside iframes and auto-clicks
-// ═══════════════════════════════════════════════════════════
 
 (function() {
     'use strict';
